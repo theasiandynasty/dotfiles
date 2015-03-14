@@ -86,6 +86,9 @@ hc mousebind $Mod-Button1 move
 hc mousebind $Mod-Button2 zoom
 hc mousebind $Mod-Button3 resize
 
+# padding
+hc pad 0 8 8 8 8
+
 # theme
 hc set frame_border_active_color '#303030'
 hc set frame_border_normal_color '#1f1f22'
@@ -112,9 +115,6 @@ hc set mouse_recenter_gap 0
 hc set frame_padding 8
 hc set snap_gap 16
 hc set snap_distance 30
-
-# padding
-hc set pad 0 8 8 8 8
 
 # rules
 hc unrule -F
