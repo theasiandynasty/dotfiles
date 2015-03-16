@@ -1,0 +1,13 @@
+# MPD Dynamic Files
+music/mpd/.config/mpd/*
+
+# Misc
+# (just in case or something)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.save
