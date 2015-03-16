@@ -1,6 +1,9 @@
 # MPD Dynamic Files
 music/mpd/.config/mpd/*
 
+# Logging
+*.log
+
 # Misc
 # (just in case or something)
 .DS_Store
