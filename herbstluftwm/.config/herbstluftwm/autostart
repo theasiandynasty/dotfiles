@@ -24,7 +24,17 @@ hc keybind $Mod-w close_or_remove
 hc keybind $Mod-Shift-w remove
 
 hc keybind $Mod-Return spawn urxvt
-hc keybind $Mod-space spawn dmenu_run
+hc keybind $Mod-space spawn dmenu_run \
+    -dim 0.65 \
+    -b -q -i \
+    -h 32 -w 400 \
+    -x 16 -y 16 \
+    -p "exec_" \
+    -fn "Oswald:style=Medium" \
+    -nb "#09110A" \
+    -nf "#384622" \
+    -sb "#222317" \
+    -sf "#76874D"
 
 # basic movement
 # focusing clients
