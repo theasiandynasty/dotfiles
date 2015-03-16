@@ -27,7 +27,7 @@ hc keybind $Mod-Return spawn urxvt
 hc keybind $Mod-space spawn dmenu_run \
     -dim 0.65 \
     -b -q -i \
-    -h 32 -w 400 \
+    -h 32 -w 800 \
     -x 16 -y 16 \
     -p "exec_" \
     -fn "Oswald:style=Medium" \
