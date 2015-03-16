@@ -8,31 +8,14 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
-
-
-
-
-
-
-
     xrdb -merge $sysresources
-
 fi
-
 if [ -f $sysmodmap ]; then
     xmodmap $sysmodmap
 fi
 
 if [ -f "$userresources" ]; then
-
-
-
-
-
-
-
     xrdb -merge "$userresources"
-
 fi
 
 if [ -f "$usermodmap" ]; then
@@ -51,6 +34,7 @@ fi
 xset +fp /usr/share/fonts/misc &
 xset fp rehash &
 
+mpd &
 compton &
 
 exec herbstluftwm
