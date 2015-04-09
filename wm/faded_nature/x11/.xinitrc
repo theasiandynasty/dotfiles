@@ -31,10 +31,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-xset +fp /usr/share/fonts/misc &
+xset +fp /usr/share/fonts/terminus &
 xset fp rehash &
 
-mpd &
+#mpd &
 compton &
 
 exec herbstluftwm
