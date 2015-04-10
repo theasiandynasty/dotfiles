@@ -36,5 +36,4 @@ xset fp rehash &
 
 #mpd &
 compton &
-
 exec herbstluftwm

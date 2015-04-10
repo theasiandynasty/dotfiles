@@ -35,7 +35,7 @@ hc keybind $Mod-Return spawn urxvt
 #    -nf "#384622" \
 #    -sb "#222317" \
 #    -sf "#76874D"
-hc keybind $Mod-space spawn dmenu_run -i -b -q -dim 0.65 -y 635 -x 490 -l 10 -w 300 -p "exec_" -nb "#09110A" -nf "#384622" -sb "#222317" -sf "#76874D"
+hc keybind $Mod-space spawn dmenu_run -i -q -dim 0.65 -y 20 -x 240 -l 20 -w 300 -p "exec_" -nb "#09110A" -nf "#384622" -sb "#222317" -sf "#76874D"
 
 # basic movement
 # focusing clients
@@ -98,7 +98,7 @@ hc mousebind $Mod-Button2 zoom
 hc mousebind $Mod-Button3 resize
 
 # padding
-hc pad 0 8 8 8 8
+hc pad 0 50 10 10 10
 
 # theme
 hc set frame_border_active_color '#303030'
@@ -123,8 +123,8 @@ hc set smart_window_surroundings 0
 hc set smart_frame_surroundings 1
 hc set mouse_recenter_gap 0
 
-hc set frame_padding 8
-hc set snap_gap 16
+hc set frame_padding 10
+hc set snap_gap 20
 hc set snap_distance 30
 
 # rules
@@ -147,10 +147,5 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 # or simply:
 # hc detect_monitors
 
-# find the panel
-#panel=~/.config/herbstluftwm/panel.sh
-#[ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
-#for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
-#    # start it on each monitor
-#    "$panel" $monitor &
-#done
+# panel
+. ~/.config/herbstluftwm/panel.sh &
