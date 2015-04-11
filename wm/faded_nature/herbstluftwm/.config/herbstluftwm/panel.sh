@@ -9,7 +9,7 @@ COL3="#ffe8c936"
 FONT="-xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso8859-1"
 
 date1(){
-        DATE1=$(date '+%I:%M')
+        DATE1=$(date '+%I:%M:%S')
         echo "$DATE1"
 }
 
