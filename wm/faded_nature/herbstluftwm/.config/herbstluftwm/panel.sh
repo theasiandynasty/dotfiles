@@ -9,7 +9,7 @@ COL3="#ffe8c936"
 FONT="-xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso8859-1"
 
 date1(){
-        DATE1=$(date '+%I:%M:%S')
+        DATE1=$(date '+%I:%M')
         echo "$DATE1"
 }
 
@@ -25,7 +25,11 @@ work(){
 
 vol(){
         VOL=$(amixer get Master | egrep -o "[0-9]+%" | egrep -o "[0-9]*")
-        echo "$VOL"
+        VOL_STATUS=$(amixer get Master | grep "Mono:" | awk '{print $6}')
+        case "$VOL_STATUS" in
+            "[off]") echo "0";;
+            "[on]") echo "$VOL";;
+        esac
 }
 
 while true; do

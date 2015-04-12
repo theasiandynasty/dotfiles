@@ -35,7 +35,8 @@ hc keybind $Mod-Return spawn urxvt
 #    -nf "#384622" \
 #    -sb "#222317" \
 #    -sf "#76874D"
-hc keybind $Mod-space spawn dmenu_run -i -q -dim 0.65 -y 20 -x 240 -l 20 -w 300 -p "exec_" -nb "#09110A" -nf "#384622" -sb "#222317" -sf "#76874D"
+#hc keybind $Mod-space spawn dmenu_run -i -q -dim 0.65 -y 20 -x 240 -l 20 -w 300 -p "exec_" -nb "#09110A" -nf "#384622" -sb "#222317" -sf "#76874D"
+#hc keybind $Mod-space spawn source ~/.config/herbstluftwm/dmenu.sh
 
 # basic movement
 # focusing clients

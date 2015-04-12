@@ -34,6 +34,8 @@ fi
 xset +fp /usr/share/fonts/terminus &
 xset fp rehash &
 
-#mpd &
+xbanish &
+mpd &
+sxhkd &
 compton &
 exec herbstluftwm
