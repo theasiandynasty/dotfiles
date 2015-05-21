@@ -34,6 +34,7 @@ fi
 xset +fp /usr/share/fonts/terminus &
 xset fp rehash &
 
+dunst &
 xbanish &
 mpd &
 sxhkd &
